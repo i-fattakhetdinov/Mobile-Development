@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="single_player">Single Player</string>
+    <string name="online">Multiplayer</string>
+    <string name="exit">Exit</string>
+    <string name="back">Back</string>
+    <string name="font">fonts/zorque.ttf</string>
+</resources>

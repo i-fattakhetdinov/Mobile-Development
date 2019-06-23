@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layout_gravity="center_horizontal|center_vertical"
+    tools:context=".GameActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="@dimen/size_game_board"
+        android:layout_height="@dimen/size_game_board"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/board_white"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/textViewTurn">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp">
+
+            <ImageView
+                android:id="@+id/table_r1_c1"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/table_r1_c2"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/table_r1_c3"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp">
+
+            <ImageView
+                android:id="@+id/table_r2_c1"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/table_r2_c2"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/table_r2_c3"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp">
+
+            <ImageView
+                android:id="@+id/table_r3_c1"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/table_r3_c2"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+
+            <ImageView
+                android:id="@+id/table_r3_c3"
+                android:layout_width="@dimen/size_player_sign_image"
+                android:layout_height="@dimen/size_player_sign_image"
+                android:layout_margin="3dp"
+                android:onClick="GameBoardClick" />
+        </TableRow>
+    </TableLayout>
+
+
+    <TextView
+        android:id="@+id/textViewTurn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
